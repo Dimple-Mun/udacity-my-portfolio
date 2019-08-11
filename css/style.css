@@ -1,4 +1,4 @@
-* {
+body {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -8,8 +8,17 @@
     color:#2d3c49;
 }
 
-img, embed, object, video{
+.featured-work {
+    color: #7d97ad;
+    font-weight: 600;
+}
+
+img, embed, object, video {
     max-width: 100%;
+}
+
+img {
+    border-radius: 5px;
 }
 
 .logo {
@@ -23,6 +32,18 @@ nav a, button {
     min-height: 48px;
 }
 
+hr {
+    margin-top: 7px;
+    *margin: 0;
+    border: 0;
+    color: #7d97ad;
+    background-color: #7d97ad;
+    height: 4px;
+}
+.reference {
+    font-size: 10px;
+}
+
 @media (max-width: 768px) {
     .logo {
         max-width: 80px;
@@ -34,4 +55,4 @@ nav a, button {
     .title {
         font-size: 16px;
     }
-  }
+}

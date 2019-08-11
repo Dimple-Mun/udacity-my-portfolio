@@ -16,17 +16,20 @@
 
     <title>My Portfolio</title>
   </head>
+
   <body>
     <div class="container">
-      <div class="row">
+      <!--Heading-->
+      <div class="row heading">
         <div class="col-md-2 col-xs-4">
           <img src="images/udacity-logo.png" alt="logo" class="img-responsive logo">
         </div>
         <div class="col-md-10 col-xs-8 text-right text-uppercase">
-          <h1 class="name">Jane Doette</h1>
-          <h4 class="title">Front-end Ninja</h4>
+          <h1 class="name">Wen. Jie</h1>
+          <h4 class="title">Front-end Trainee</h4>
         </div>
       </div>
+      <!--Main content-->
       <div class="row">
         <div class="col-md-12">
           <hr>
@@ -34,12 +37,13 @@
       </div>
       <div class="row">
         <div class="col-md-12">
-          <img src="images/window-mini.jpg" class="img-responsive">
+          <img src="images/window-mini.jpg" alt="code for front-end development" class="img-responsive">
+          <p class="reference">Original image on Pexels: <a href="https://www.pexels.com/photo/business-code-coding-computer-270632/">link</a></p>
         </div>
       </div>
       <div class="row">
         <div class="col-md-12">
-          <h2>Featured Work</h2>
+          <h2 class="featured-work">Featured Work</h2>
         </div>
       </div>
       <div class="row text-center">
@@ -49,27 +53,37 @@
           <p><a href="http://github.com/">Link to project</a></p>
         </div>
         <div class="col-md-4">
-          <img src="images/featured-work-2.jpg" class="img-responsive" data-toggle="modal" data-target="#project2">
-          <h3>Animal Trading Card</h3>
+          <img src="images/featured-work-2.jpg" alt="snapshot of animal-trading-card project" class="img-responsive" data-toggle="modal" data-target="#project2">
+          <h3>Animal Trading Card<sup>*</sup></h3>
           <p><a href="http://github.com/">Link to project</a></p>
         </div>
         <div class="col-md-4">
-          <img src="images/featured-work-3.jpg" class="img-responsive">
-          <h3>My Favorite App</h3>
+          <img src="images/featured-work-3.jpg" alt="snapshot of my-favorite-app project" class="img-responsive">
+          <h3>My Favorite App<sup>*</sup></h3>
           <p><a href="http://github.com/">Link to project</a></p>
         </div>
       </div>
+      <!--Footer-->
+      <div class="row">
+        <div class="col-md-12">
+          <hr>
+        </div>
+      </div>
+      <div class="col-md-12 row text-left reference footer">
+        <p>*Original images on website</p>
+      </div>
+
     </div>
 
     <!-- Modal for project1-->
-    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="modal-label-1" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title" id="myModalLabel">More Details: Mockup to Article</h4>
+            <h4 class="modal-title modal-label-1" id="modal-label-1">More Details: Mockup to Article<sup>*</sup></h4>
           </div>
           <div class="modal-body">
-            <img class="img-responsive" src="https://i2.wp.com/blog.udacity.com/wp-content/uploads/2016/03/56df2490a351d802222160.gif">
+            <img class="img-responsive" alt="AlphaGo has won the first two matches" src="https://i2.wp.com/blog.udacity.com/wp-content/uploads/2016/03/56df2490a351d802222160.gif">
             This was my first project in this class. I learned a lot about HTML.
           </div>
           <div class="modal-footer">
@@ -80,14 +94,14 @@
     </div>
 
     <!-- Modal for project2-->
-    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="modal-label-2" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title" id="myModalLabel">More Details: Animal Trading Card</h4>
+            <h4 class="modal-title" id="modal-label-2">More Details: Animal Trading Card</h4>
           </div>
           <div class="modal-body">
-            <img class="img-responsive" src="images/featured-work-detail-2.jpg">
+            <img class="img-responsive" alt="welsh corgi pembroke" src="images/featured-work-detail-2.jpg">
             This was my second project in this class. I learned a lot about CSS.
           </div>
           <div class="modal-footer">
@@ -96,10 +110,6 @@
         </div>
       </div>
     </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <!--<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>-->
+
   </body>
 </html>
