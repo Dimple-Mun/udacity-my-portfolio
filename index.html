@@ -18,9 +18,10 @@
   </head>
 
   <body>
-    <div class="container">
+    <!-- Home page content -->
+    <article class="container">
       <header>
-        <section class="row basic-information">
+        <div class="row basic-information">
           <div class="col-md-2 col-xs-4">
             <img src="images/udacity-logo.png" alt="logo" class="img-responsive logo">
           </div>
@@ -28,47 +29,41 @@
             <h1 class="name">Wen. Jie</h1>
             <h4 class="title">Front-end Trainee</h4>
           </div>
-        </section>
+        </div>
         <div class="row cut-off">
           <div class="col-md-12">
             <hr>
           </div>
         </div>
       </header>
-
-      <article>
-        <section class="row">
+      <section class="row">
+        <div class="col-md-12">
+          <img src="images/window-mini.jpg" alt="code for front-end development" class="img-responsive">
+          <p class="reference">Original image on Pexels: <a href="https://www.pexels.com/photo/business-code-coding-computer-270632/">link</a></p>
+        </div>
+        <div class="row">
           <div class="col-md-12">
-            <img src="images/window-mini.jpg" alt="code for front-end development" class="img-responsive">
-            <p class="reference">Original image on Pexels: <a href="https://www.pexels.com/photo/business-code-coding-computer-270632/">link</a></p>
+            <h2 class="featured-work">Featured Work</h2>
           </div>
-        </section>
-        <section>
-          <div class="row">
-            <div class="col-md-12">
-              <h2 class="featured-work">Featured Work</h2>
-            </div>
-          </div>
-          <div class="row text-center">
-            <figure class="col-md-4">
-              <img src="images/featured-work-1.jpg" alt="snapshot of mockup-to-artical project" class="img-responsive" data-toggle="modal" data-target="#project1">
-              <h3>Mockup to Article</h3>
-              <p><a href="http://github.com/">Link to project</a></p>
-            </figure>
-            <figure class="col-md-4">
-              <img src="images/featured-work-2.jpg" alt="snapshot of animal-trading-card project" class="img-responsive" data-toggle="modal" data-target="#project2">
-              <h3>Animal Trading Card<sup>*</sup></h3>
-              <p><a href="http://github.com/">Link to project</a></p>
-            </figure>
-            <figure class="col-md-4">
-              <img src="images/featured-work-3.jpg" alt="snapshot of my-favorite-app project" class="img-responsive">
-              <h3>My Favorite App<sup>*</sup></h3>
-              <p><a href="http://github.com/">Link to project</a></p>
-            </figure>
-          </div>
-        </section>
-      </article>
-
+        </div>
+        <div class="row text-center">
+          <figure class="col-md-4">
+            <img src="images/featured-work-1.jpg" alt="snapshot of mockup-to-artical project" class="img-responsive" data-toggle="modal" data-target="#project1">
+            <h3>Mockup to Article</h3>
+            <p><a href="http://github.com/" target="_blank">Link to project</a></p>
+          </figure>
+          <figure class="col-md-4">
+            <img src="images/featured-work-2.jpg" alt="snapshot of animal-trading-card project" class="img-responsive" data-toggle="modal" data-target="#project2">
+            <h3>Animal Trading Card<sup>*</sup></h3>
+            <p><a href="http://github.com/" target="_blank">Link to project</a></p>
+          </figure>
+          <figure class="col-md-4">
+            <img src="images/featured-work-3.jpg" alt="snapshot of my-favorite-app project" class="img-responsive">
+            <h3>My Favorite App<sup>*</sup></h3>
+            <p><a href="http://github.com/" target="_blank">Link to project</a></p>
+          </figure>
+        </div>
+      </section>
       <footer>
         <div class="row">
           <div class="col-md-12">
@@ -78,44 +73,47 @@
         <div class="col-md-12 row text-left reference footer">
           <p>*Original images on website</p>
         </div>
-      </footer>
-    </div>
+      </footer> 
+    </article>
 
     <!-- Modal for project1-->
-    <article class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="modal-label-1" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <header class="modal-header">
-            <h4 class="modal-title modal-label-1" id="modal-label-1">More Details: Mockup to Article<sup>*</sup></h4>
-          </header>
-          <section class="modal-body">
-            <img class="img-responsive" alt="AlphaGo has won the first two matches" src="https://i2.wp.com/blog.udacity.com/wp-content/uploads/2016/03/56df2490a351d802222160.gif">
-            This was my first project in this class. I learned a lot about HTML.
-          </section>
-          <footer class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </footer>
+    <section>
+      <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="modal-label-1" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <header class="modal-header">
+              <h4 class="modal-title modal-label-1" id="modal-label-1">More Details: Mockup to Article<sup>*</sup></h4>
+            </header>
+            <figure class="modal-body">
+              <img class="img-responsive" alt="AlphaGo has won the first two matches" src="https://i2.wp.com/blog.udacity.com/wp-content/uploads/2016/03/56df2490a351d802222160.gif">
+              This was my first project in this class. I learned a lot about HTML.
+            </figure>
+            <footer class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </footer>
+          </div>
         </div>
       </div>
-    </article>
+    </section>
 
     <!-- Modal for project2-->
-    <article class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="modal-label-2" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <header class="modal-header">
-            <h4 class="modal-title" id="modal-label-2">More Details: Animal Trading Card</h4>
-          </header>
-          <section class="modal-body">
-            <img class="img-responsive" alt="welsh corgi pembroke" src="images/featured-work-detail-2.jpg">
-            This was my second project in this class. I learned a lot about CSS.
-          </section>
-          <footer class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </footer>
+    <section>
+      <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="modal-label-2" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <header class="modal-header">
+              <h4 class="modal-title" id="modal-label-2">More Details: Animal Trading Card</h4>
+            </header>
+            <figure class="modal-body">
+              <img class="img-responsive" alt="welsh corgi pembroke" src="images/featured-work-detail-2.jpg">
+              This was my second project in this class. I learned a lot about CSS.
+            </figure>
+            <footer class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </footer>
+          </div>
         </div>
       </div>
-    </article>
-
+    </section>
   </body>
 </html>
